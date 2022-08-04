@@ -1,5 +1,6 @@
 import express from 'express';
 import bodyParser from 'body-parser';
+import config from './config/index.js';
 
 const app = express();
 
@@ -16,6 +17,6 @@ app.get('/', (req, res) => {
     });
 });
 
-app.listen(3001, () => {
-    console.log('Server starts on port 3000!');
+app.listen(config.PORT, () => {
+    console.log(`Server starts on port ${config.PORT}!`);
 });
