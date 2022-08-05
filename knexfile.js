@@ -33,7 +33,7 @@ export default {
         },
     },
 
-    prod: {
+    production: {
         client: 'postgresql',
         connection: {
             host: config.DB.host,

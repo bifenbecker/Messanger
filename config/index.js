@@ -4,8 +4,8 @@ dotenv.config();
 
 const config = convict({
     ENV: {
-        format: ['prod', 'dev', 'test'],
-        default: 'dev',
+        format: ['production', 'development', 'test'],
+        default: 'development',
         arg: 'nodeEnv',
         env: 'NODE_ENV',
     },
